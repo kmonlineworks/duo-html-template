@@ -1,0 +1,27 @@
+/* Decleared Varibales */
+:root{
+  /* Colors */
+  --primaryColor: #D62828;
+  --secondaryColor: #F77F00;
+  --bgColor: #F2EBFB;
+  --litColor: #FBFAFF;
+  --whiteColor: #FFFFFF;
+  --blackColor: #333333;
+  /* Font */
+  --ff-regular: 'RajdhaniRegular', sans-serif;
+  --ff-medium: 'RajdhaniMedium', sans-serif;
+  --ff-light: 'RajdhaniLight', sans-serif;
+  --ff-semibold: 'RajdhaniSemiBold', sans-serif;
+  --ff-bold: 'RajdhaniBold', sans-serif;
+  --fs: 1em;
+  /* Utilities */
+  --outer-width: 1440px;
+  --inner-width: calc(1440px - 240px);
+  --header-height: 85px;
+  --padding: 1em;
+  --margin: 1em;
+  --b-radius: 5px;
+  --ls: 0.02em;
+  --lh: 1em;
+  --box-shadow: 0 0 20px rgba(0,0,0,0.050);
+}

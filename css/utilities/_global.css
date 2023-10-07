@@ -1,0 +1,129 @@
+/* Design Elements Styling */
+.btn{
+  --textColor: var(--litColor);
+  --backgroundColor: var(--primaryColor);
+  --hoverColor: var(--secondaryColor);
+  display: inline-block;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  font-family: var(--ff-semibold);
+  font-size: var(--fs);
+  padding: var(--padding) calc(var(--padding) * 1.5);
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.btn:hover{
+  background-color: var(--hoverColor);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+::placeholder{
+  color: rgba(0,0,0,0.4);
+}
+form .form-group{
+  margin-bottom: var(--margin);
+}
+form input{
+  width: 100%;
+  height: 45px;
+  background-color: var(--whiteColor);
+  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+  border: 1px solid transparent;
+  padding: var(--padding);
+}
+form textarea{
+  width: 100%;
+  background-color: var(--whiteColor);
+  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+  padding: var(--padding);
+}
+form button{
+  cursor: pointer;
+}
+
+form input:invalid,
+form textarea:invalid{
+  border-color: red;
+}
+form input:placeholder-shown:not(:focus){
+  border-color: transparent;
+  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+form input:placeholder-shown:focus:valid,
+form textarea:placeholder-shown:focus:valid{
+  border-color: transparent;
+  box-shadow: 0 0 1px rgba(0,0,0,0.8);
+}
+form input:focus,
+form textarea:focus{
+  border-color: transparent;
+  box-shadow: 0 0 1px rgba(0,0,0,0.8);
+}
+form input:valid,
+form textarea:valid{
+  border-color: green;
+}
+
+.dots{
+  --dots-color: var(--primaryColor);
+  --size: 1px;
+  --sizeTwo: 2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--dots-color);
+  box-shadow: 0 0 0px var(--size) var(--dots-color),
+              40px 0 0px var(--sizeTwo) var(--dots-color),
+              80px 0 0px var(--size) var(--dots-color),
+              120px 0 0px var(--sizeTwo) var(--dots-color),
+              160px 0 0px var(--size) var(--dots-color),
+              0px 40px 0px var(--sizeTwo) var(--dots-color),
+              40px 40px 0px var(--size) var(--dots-color),
+              80px 40px 0px var(--sizeTwo) var(--dots-color),
+              120px 40px 0px var(--size) var(--dots-color),
+              160px 40px 0px var(--sizeTwo) var(--dots-color),
+              0px 80px 0px var(--size) var(--dots-color),
+              40px 80px 0px var(--sizeTwo) var(--dots-color),
+              80px 80px 0px var(--size) var(--dots-color),
+              120px 80px 0px var(--sizeTwo) var(--dots-color),
+              160px 80px 0px var(--size) var(--dots-color),
+              0px 120px 0px var(--sizeTwo) var(--dots-color),
+              40px 120px 0px var(--size) var(--dots-color),
+              80px 120px 0px var(--sizeTwo) var(--dots-color),
+              120px 120px 0px var(--size) var(--dots-color),
+              160px 120px 0px var(--sizeTwo) var(--dots-color),
+              0px 160px 0px var(--sizeTwo) var(--dots-color),
+              40px 160px 0px var(--size) var(--dots-color),
+              80px 160px 0px var(--sizeTwo) var(--dots-color),
+              120px 160px 0px var(--size) var(--dots-color),
+              160px 160px 0px var(--sizeTwo) var(--dots-color);
+}
+.lines{
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  overflow: hidden;
+}
+.lines span{
+  --lines-color: var(--secondaryColor);
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: var(--lines-color);
+  box-shadow: 0 0 0px 1px var(--lines-color),
+              0 10px 0px 1px var(--lines-color),
+              0 20px 0px 1px var(--lines-color),
+              0 30px 0px 1px var(--lines-color),
+              0 40px 0px 1px var(--lines-color),
+              0 50px 0px 1px var(--lines-color),
+              0 60px 0px 1px var(--lines-color),
+              0 70px 0px 1px var(--lines-color),
+              0 80px 0px 1px var(--lines-color),
+              0 90px 0px 1px var(--lines-color),
+              0 100px 0px 1px var(--lines-color),
+              0 110px 0px 1px var(--lines-color),
+              0 120px 0px 1px var(--lines-color),
+              0 130px 0px 1px var(--lines-color),
+              0 140px 0px 1px var(--lines-color),
+              0 150px 0px 1px var(--lines-color);
+}

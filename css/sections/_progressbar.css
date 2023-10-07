@@ -1,0 +1,193 @@
+.progressbar {
+	padding: calc(var(--padding) * 4) 0;
+	margin-top: calc(var(--margin) * 2);
+}
+.progressbar__container {
+	width: var(--inner-width);
+	max-width: 100%;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: calc(50% - 60px) 50%;
+	align-items: center;
+	grid-column-gap: 60px;
+
+	position: relative;
+	z-index: 1;
+}
+.progressbar__left {
+	position: relative;
+	left: 20px;
+}
+.progressbar__left:before {
+	content: '';
+	width: 200px;
+	height: 200px;
+	background-color: var(--litColor);
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+.progressbar__left .dots {
+	--size: 1px;
+	--sizeTwo: 1px;
+
+	position: absolute;
+	right: 190px;
+	top: -70px;
+	z-index: -1;
+}
+.progressbar__left--visual-content {
+	width: 80%;
+	height: 100%;
+	padding: calc(var(--padding) * 2);
+	background: var(--whiteColor);
+	border-radius: 0 0 0 calc(var(--b-radius) * 30);
+	box-shadow: var(--box-shadow);
+}
+.progressbar__right--heading {
+	width: 100%;
+}
+.progressbar__right--heading-small {
+	color: var(--secondaryColor);
+	font-family: var(--ff-semibold);
+	font-size: calc(var(--fs) * 1.1);
+	margin-bottom: var(--margin);
+}
+.progressbar__right--heading-big {
+	color: var(--blackColor);
+	font-family: var(--ff-bold);
+	font-size: calc(var(--fs) * 2.2);
+}
+.progressbar__right--items {
+	margin-top: calc(var(--margin) * 2);
+}
+.progressbar__right--items-item {
+	padding-bottom: calc(var(--padding) * 2);
+	overflow: hidden;
+}
+.progressbar__right--items-item p {
+	color: var(--primaryColor);
+	font-family: var(--ff-semibold);
+	margin-bottom: calc(var(--margin) * 0.5);
+}
+.progressbar__right--items-item:nth-child(even) p {
+	color: var(--secondaryColor);
+}
+.progressbar__right--items-item span {
+	width: 100%;
+	height: 8px;
+	display: block;
+
+	position: relative;
+	z-index: 1;
+}
+.progressbar__right--items-item .progressbar__right--items-item-shadow {
+	width: 100%;
+	height: 50%;
+	background-color: var(--bgColor);
+	border-radius: 5px;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.progressbar__right--items-item .progressbar__right--items-item-progress {
+	width: 0%;
+	height: 100%;
+	background-color: var(--secondaryColor);
+	border-radius: 5px;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+.progressbar__right--items-item:nth-child(even) .progressbar__right--items-item-progress {
+	background-color: var(--primaryColor);
+}
+.progressbar__right--items-item .progressbar__right--items-item-number {
+	width: auto;
+	height: auto;
+	padding: calc(var(--padding) * 0.2);
+	font-family: var(--ff-bold);
+	font-size: calc(var(--fs) * 0.9);
+	color: var(--whiteColor);
+	background-color: var(--primaryColor);
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+.progressbar__right--items-item:nth-child(even) .progressbar__right--items-item-number {
+	background-color: var(--secondaryColor);
+}
+.progressbar__left--visual-content #svgProssessItems {
+	transform: translate(20px, 10px);
+}
+.progressbar__left--visual-content #svgProgressBrush {
+	transform: translateX(10px);
+	transform-origin: center;
+	animation: brushAnimation 1.5s ease 0.1s infinite alternate;
+}
+.progressbar__left--visual-content #svgProgressPencil {
+	transform: translateX(-10px);
+	transform-origin: center;
+	animation: pencilAnimation 1.5s ease 0.2s infinite alternate;
+}
+/* ANIMATIONS FOR SVG */
+@keyframes brushAnimation {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: translateX(10px) rotate(-3deg);
+	}
+}
+@keyframes pencilAnimation {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: translateX(-10px) rotate(3deg);
+	}
+}
+
+/* MEDIA SCREENS */
+@media screen and (max-width: 1024px) {
+	.progressbar__container {
+		grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+		grid-column-gap: 30px;
+	}
+	.progressbar__left {
+		left: 0;
+	}
+	.progressbar__left--visual-content {
+		width: 88%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.progressbar__container {
+		display: block;
+	}
+	.progressbar__left {
+		left: 0;
+		margin-bottom: calc(var(--margin) * 2);
+	}
+	.progressbar__left--visual-content {
+		width: 100%;
+	}
+	.progressbar__left .dots {
+		right: 140px;
+	}
+	.progressbar__right--heading {
+		text-align: center;
+	}
+}

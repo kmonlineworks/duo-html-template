@@ -1,0 +1,52 @@
+/* =========================================================
+Template Name: Duo
+Template Version: 1.0.0
+========================================================= */
+
+/* Import Fonts from Partial File */
+@import url('utilities/_fonts.css');
+
+/* Import CSS Variables from Partial File */
+@import url('utilities/_variables.css');
+
+/* Import Reset Default Browser Styles from Partial File */
+@import url('utilities/_reset.css');
+
+/* Import Section / Global Styling form Partial File */
+@import url('utilities/_global.css');
+
+/* Import Keyframse Animations from Partial File */
+@import url('utilities/_animations.css');
+
+/* Import Header / Navbar from Partial File */
+@import url('layout/_header.css');
+
+/* Import Section / Showcase Styling form Partial File */
+@import url('sections/_showcase.css');
+
+/* Import Section / Dealin Styling form Partial File */
+@import url('sections/_dealin.css');
+
+/* Import Section / About Styling form Partial File */
+@import url('sections/_about.css');
+
+/* Import Section / Skillset Styling form Partial File */
+@import url('sections/_skillset.css');
+
+/* Import Section / Portfolio Styling form Partial File */
+@import url('sections/_portfolio.css');
+
+/* Import Section / Progressbar Styling form Partial File */
+@import url('sections/_progressbar.css');
+
+/* Import Section / Testimonial Styling form Partial File */
+@import url('sections/_testimonial.css');
+
+/* Import Section / Contact Form Styling form Partial File */
+@import url('sections/_contact.css');
+
+/* Import Section / Carousel Styling form Partial File */
+@import url('sections/_carousel.css');
+
+/* Import Footer / Copyright from Partial File */
+@import url('layout/_footer.css');

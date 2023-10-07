@@ -1,0 +1,148 @@
+/* =========================================================
+Template Name: Duo
+Template Version: 1.0.0
+========================================================= */
+
+/* Import Fonts from Partial File */
+@import url('utilities/_fonts.css');
+
+/* Import CSS Variables from Partial File */
+@import url('utilities/_variables.css');
+
+/* Import Reset Default Browser Styles from Partial File */
+@import url('utilities/_reset.css');
+
+/* Import Section / Global Styling form Partial File */
+@import url('utilities/_global.css');
+
+/* Import Keyframse Animations from Partial File */
+@import url('utilities/_animations.css');
+
+/* Import Header / Navbar from Partial File */
+@import url('layout/_header.css');
+
+/* Import Section / Dealin Styling form Partial File */
+@import url('sections/_dealin.css');
+
+/* Import Section / About Styling form Partial File */
+@import url('sections/_about.css');
+
+/* Import Section / Progressbar Styling form Partial File */
+@import url('sections/_progressbar.css');
+
+/* Import Section / Team Styling form Partial File */
+@import url('sections/_team.css');
+
+/* Import Section / Portfolio Styling form Partial File */
+@import url('sections/_portfolio.css');
+
+/* Import Section / Carousel Styling form Partial File */
+@import url('sections/_carousel.css');
+
+/* Import Footer / Copyright from Partial File */
+@import url('layout/_footer.css');
+
+/* About Page Styling */
+.about__showcase {
+	background: var(--litColor) url('../../assets/images/showcase-bg.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+	overflow: hidden;
+	margin-top: unset;
+}
+.about__showcase .about__container {
+	grid-template-columns: 50% 50%;
+}
+.about__showcase .about__left {
+	order: 2;
+}
+.about__showcase .about__left--visual-content {
+	margin: 0 auto;
+}
+.about__showcase .about__left--visual-content-image {
+	position: relative;
+	z-index: 3;
+}
+.about__showcase .about__right {
+	position: relative;
+}
+.about__showcase .about__right .dots {
+	--dots-color: var(--primaryColor);
+	--size: 1px;
+	--sizeTwo: 1px;
+	position: absolute;
+	left: 20px;
+	top: 115px;
+	z-index: 1;
+}
+.about__showcase .about__right .lines {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	transform: rotate(45deg);
+
+	position: absolute;
+	top: 180px;
+	left: 135px;
+	z-index: 0;
+}
+.about__showcase .about__right .lines span {
+	--lines-color: var(--bgColor);
+	height: 1px;
+}
+.about__showcase .about__right--text-content {
+	max-width: 100%;
+	margin-left: unset;
+	position: relative;
+	left: 200px;
+	z-index: 3;
+}
+.about__showcase .about__right--text-content-small {
+	color: var(--blackColor);
+	font-size: calc(var(--fs) * 2.8);
+	font-family: var(--ff-bold);
+	margin-bottom: calc(var(--margin) * 0.3);
+}
+.about__showcase .about__right--text-content-big {
+	color: var(--secondaryColor);
+	font-size: calc(var(--fs) * 1);
+	font-family: var(--ff-semibold);
+	margin-left: calc(var(--margin) * 4);
+}
+.intro {
+	margin-top: calc(var(--margin) * 6);
+	overflow: hidden;
+}
+.intro .intro__container {
+	width: var(--inner-width);
+	max-width: 100%;
+	margin: 0 auto;
+}
+.intro .intro__heading {
+	color: var(--secondaryColor);
+	font-family: var(--ff-bold);
+	font-size: calc(var(--fs) * 2.2);
+	margin-bottom: var(--margin);
+}
+.intro .intro__heading--small {
+	color: var(--blackColor);
+	font-family: var(--ff-medium);
+	font-size: calc(var(--fs) * 1.5);
+	line-height: calc(var(--lh) * 1.2);
+	margin-bottom: var(--margin);
+}
+.intro .intro__description {
+	color: var(--blackColor);
+	font-family: var(--ff-regular);
+	font-size: var(--fs);
+	line-height: calc(var(--lh) * 1.3);
+	margin-bottom: var(--margin);
+}
+.portfolio__aboutpages {
+	background-color: var(--litColor);
+}
+.portfolio__aboutpages .portfolio__counter {
+	margin-top: unset;
+	margin-bottom: unset;
+}
