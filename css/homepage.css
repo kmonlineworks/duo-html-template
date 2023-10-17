@@ -5,23 +5,23 @@ Template Version: 1.0.0
 /* Import Fonts from Partial File */
 @font-face {
   font-family: RajdhaniRegular;
-  src: url("../../assets/fonts/Rajdhani-Regular.ttf");
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@400&display=swap');
 }
 @font-face {
   font-family: RajdhaniMedium;
-  src: url("../../assets/fonts/Rajdhani-Medium.ttf");
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@500&display=swap");
 }
 @font-face {
   font-family: RajdhaniLight;
-  src: url("../../assets/fonts/Rajdhani-Light.ttf");
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@300&display=swap");
 }
 @font-face {
   font-family: RajdhaniSemiBold;
-  src: url("../../assets/fonts/Rajdhani-SemiBold.ttf");
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@600&display=swap");
 }
 @font-face {
   font-family: RajdhaniBold;
-  src: url("../../assets/fonts/Rajdhani-Bold.ttf");
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@700&display=swap");
 }
 /* Import CSS Variables from Partial File */
 /* Decleared Varibales */
