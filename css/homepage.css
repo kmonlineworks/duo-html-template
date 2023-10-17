@@ -3,25 +3,25 @@ Template Name: Duo
 Template Version: 1.0.0
 ========================================================= */
 /* Import Fonts from Partial File */
-@font-face {
+font-face {
   font-family: RajdhaniRegular;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@400&display=swap');
+  src: url('../assets/fonts/Rajdhani-Regular.ttf');
 }
 @font-face {
   font-family: RajdhaniMedium;
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@500&display=swap");
+  src: url('../assets/fonts/Rajdhani-Medium.ttf');
 }
 @font-face {
   font-family: RajdhaniLight;
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@300&display=swap");
+  src: url('../assets/fonts/Rajdhani-Light.ttf');
 }
 @font-face {
   font-family: RajdhaniSemiBold;
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@600&display=swap");
+  src: url('../assets/fonts/Rajdhani-SemiBold.ttf');
 }
 @font-face {
   font-family: RajdhaniBold;
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Rajdhani:wght@700&display=swap");
+  src: url('../assets/fonts/Rajdhani-Bold.ttf');
 }
 /* Import CSS Variables from Partial File */
 /* Decleared Varibales */
