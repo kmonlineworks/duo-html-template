@@ -3,7 +3,7 @@ Template Name: Duo
 Template Version: 1.0.0
 ========================================================= */
 /* Import Fonts from Partial File */
-font-face {
+@font-face {
   font-family: RajdhaniRegular;
   src: url('../assets/fonts/Rajdhani-Regular.ttf');
 }
